@@ -32,3 +32,24 @@ class ArrayFunctions {
 		display(odd);
 	}
 	
+	/*gives the first index of the numbers with the smallest difference*/
+	void smallestDifference() {
+		Input in = new Input();
+		int[] array = in.arrayInput();
+		int minDiff = 9999;
+		int minIndex = 0;
+		
+		for(int i = 0; i < array.length; i++) {
+			for(int j = i+1; j < array.length; j++) {
+				int diff = array[i] - array[j];
+				int absDiff = Math.abs(diff);
+				if(absDiff < minDiff) {
+					minDiff = absDiff;
+					minIndex = i;
+				}
+			}
+		}
+		
+		System.out.println("Minimum Index = "+minIndex);
+	}
+
