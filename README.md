@@ -1,6 +1,4 @@
-# Assignment-2# Java Array Functions Project
-
-This project demonstrates array and ArrayList manipulation in Java with the following features:
+# Assignment-2
 
 ## Features
 
