@@ -53,3 +53,25 @@ class ArrayFunctions {
 		System.out.println("Minimum Index = "+minIndex);
 	}
 
+	// funtion to convert array to array list
+	void arrayToArrayList(int[] array) {
+
+		ArrayList<Integer> arrayList = new ArrayList<>();
+		for(int i : array) {
+			arrayList.add(i);
+		}
+
+		System.out.println("Array List = "+arrayList);
+	}
+
+	// funtion to convert array list to array
+	void arrayListToArray(ArrayList<Integer> arrayList) {
+
+        int[] array = new int[arrayList.size()];
+        for (int i = 0; i < arrayList.size(); i++) {
+            array[i] = arrayList.get(i);
+        }
+
+        System.out.println("Array: " + Arrays.toString(array));
+    }
+}
